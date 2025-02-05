@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandMade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <div class="main__item">
+                <h1 class="main__title">Jewellery of handmade</h1>
+                <p class="main__text">all products are created with love</p>
+                <a href="#" class="link">calculation & order</a>
+            </div>
+            <div class="main__images">
+                <img class="main__images" src="images/main.png" alt="">
+    
+            </div>
+        </main>
+        <section class="products">
+            <h2 class="title-h2">Our products</h2>
+            <div class="grid">
+                <div class="grid__cover">
+                    <img src="images/products/01.jpg" alt="">
+                </div>
+                <div class="grid__cover">
+                    <img src="images/products/02.jpg" alt="">
+                </div>
+                <div class="grid__cover">
+                    <img src="images/products/03.jpg" alt="">
+                </div>
+                <div class="grid__cover">
+                    <img src="images/products/04.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+        <div class="cost">
+            <div class="cost__title">
+                <svg class="circle" width="200" height="200" viewBox="0 0 200 200">
+                    <path id="circleShape" class="circle__shape" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none"></path>
+                    <path class="circle__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" stroke="#271B20" stroke-width="2"></path>
+                    <text class="circle__text">
+                        <textPath href="#circleShape">calculate cost</textPath>
+                    </text>
+                </svg>
+                </div>
+            <div class="cost__calc">
+                <form class="form">
+                    <p class="form__text">Select product:</p>
+                    <select id="selectProduct" class="form__select">
+                        <option value="0" selected disabled>Select from the list</option>
+                        <option value="1000">Bracelet (1000 €)</option>
+                        <option value="2000">Ring (2000 €)</option>
+                        <option value="1500">Earrings (1500 €)</option>
+                    </select>
+                    <p class="form__text">Specify quantity:</p>
+                    <input id="quantityProduct" class="form__input" type="number" value="0" min="0">
+                    <button type="button" class="link" id="btnProduct">Calculate</button>
+                </form>
+            <div id="infoProduct" class="total" style="display:none;">
+                <p class="total__price">Conclusion: <span id="priceProduct"></span> €</p>
+                <p class="total__info">leave a request by mail: <a href="mailto:order@jewelery.com" class="total__email">order@jewelery.com</a></p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>
